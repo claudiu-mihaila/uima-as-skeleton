@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+	<frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+	<primitive>false</primitive>
+  <delegateAnalysisEngineSpecifiers>
+    <delegateAnalysisEngine key="TypeA">
+      <import location="eu/claudiumihaila/nlp/uima/TypeARemote.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="TypeB">
+      <import location="eu/claudiumihaila/nlp/uima/TypeBRemote.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="TypeC">
+      <import location="eu/claudiumihaila/nlp/uima/TypeCRemote.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="TypeD">
+      <import location="eu/claudiumihaila/nlp/uima/TypeDRemote.xml"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="TypeE">
+      <import location="eu/claudiumihaila/nlp/uima/TypeERemote.xml"/>
+    </delegateAnalysisEngine>
+  </delegateAnalysisEngineSpecifiers>
+	<analysisEngineMetaData>
+		<name>AAEDescriptor</name>
+		<description/>
+		<version>1.0</version>
+		<vendor/>
+		<configurationParameters/>
+		<configurationParameterSettings/>
+		<flowConstraints>
+			<fixedFlow>
+				<node>TypeA</node>
+				<node>TypeB</node>
+				<node>TypeC</node>
+				<node>TypeD</node>
+				<node>TypeE</node>
+			</fixedFlow>
+		</flowConstraints>
+		<fsIndexCollection/>
+		<capabilities>
+			<capability>
+				<inputs/>
+				<outputs/>
+				<languagesSupported/>
+			</capability>
+		</capabilities>
+		<operationalProperties>
+			<modifiesCas>true</modifiesCas>
+			<multipleDeploymentAllowed>true</multipleDeploymentAllowed>
+			<outputsNewCASes>false</outputsNewCASes>
+		</operationalProperties>
+	</analysisEngineMetaData>
+	<resourceManagerConfiguration/>
+</analysisEngineDescription>
